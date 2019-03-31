@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Item Catalog</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+	<header class="header">
+		<a href="/" class="title"><h1 class="title">Movie catalog</h1></a>
+		<div class="user">
+			{%if 'username' not in session %}
+				<a href="{{url_for('login')}}" class="login">Click Here to Login</a>
+			{% else %}
+				<a href="{{url_for('logout')}}" class="login">Logout</a>
+			{% endif %}
+		</div>
+	</header>
+	<div class="container">
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+</html>

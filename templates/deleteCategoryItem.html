@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block content %}
+	<div class="row">
+		<h2>Delete Movie</h2>
+		<form action="#" method="post">
+			<h4>Are you sure you want to delete {{categoryItem.name}}?</h4>
+			<a href="{{url_for('showCategoryItem', catalog_id = categoryItem.category_id ,item_id = categoryItem.id )}}" > Back </a>
+			<input type="submit" value="Delete">
+		</form>
+	</div>
+
+{% endblock %}

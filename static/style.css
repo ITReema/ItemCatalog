@@ -1,0 +1,95 @@
+* {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+body {
+	background-color: #d2d6dA;
+}
+
+.header {
+	background: #0c1734;
+    	border-bottom: .1rem solid;
+    	height: 70px;
+    	width: 100%;
+    	top: 0px;
+	color: #ff7f50;
+	display: block;
+}
+
+.login {
+	text-align: right;
+	color: #ff7f50;
+	padding-left: 700px;
+
+}
+
+.title {
+	text-decoration: none;
+	display: inline;
+	padding-left: 20px;
+	color: #fff;
+}
+
+.user {
+	display: inline;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+h2 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	line-height: 60px;
+	font-weight: 300;
+	padding-left: 20px;
+}
+
+h4 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 300;
+	color: #0c1734;
+}
+
+.container {
+	background: #fff;
+    	height: 350px;
+    	width: 70%;
+    	border: 1px solid #d2d6dA;
+    	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 30px;	
+}
+
+.newitem {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding-left: 30px;
+}
+
+.edit {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding-left: 30px;
+}
+
+.row {
+	padding-left: 20px;
+}
+
+input {
+	background-color: white;
+	color: #ff7f50;
+	border: none;
+}

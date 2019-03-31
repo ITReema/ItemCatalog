@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% block content %}
+	<div class="row">
+		<span class="category">Categories</span>
+		<ul class="categoryitem">
+			{% for category in categories %}
+				<a href="{{url_for('showCategory', catalog_id = category.id )}}">
+					<li>
+						<span>{{category.name}}</span>
+					</li>
+				</a>
+			{% endfor %}
+		</ul>
+		<span class="latest">{{categoryName}} Movies ({{categoryItemsCount}} Items)</span>
+			<ul class="latest">
+				{% for categoryItem in categoryItems %}
+					<a href="{{url_for('showCategoryItem', catalog_id = categoryItem.category_id ,item_id = categoryItem.id )}}">
+						<li>
+							<span>{{categoryItem.name}}</span>
+						</li>
+					</a>
+				{% endfor %}
+			</ul>
+	</div>
+{% endblock %}
